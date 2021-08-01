@@ -1,0 +1,29 @@
+ALGOS TASK 3
+
+TASK 3-A
+- define a function for calculating sum of digits (def sod)
+- take in the integer
+- call function sod as long as it returns a value more than 10
+- calculate number of times its called an store it in ans
+- print ans
+
+TASK 3-B
+- the total number of colours used is same as the number of prime numbers between 0 and number of number of flags(n)
+- we define a function (def numofprimes) to calculate it
+- the function uses sieve of eratosthenes method since it is the most efficient way
+- we take in number of flags(n)
+- find number of primes between 0-n and store it in 'a'
+- we find sum of natural numbers until a using the formula x*(x+1)/2 and store it in ans
+- print ans
+
+TASK 3-C
+- we take in n,m,a[]
+- we sort a[] in ascending order
+- if n=1, sum of a[] is the answer
+- else, we create two variables n1(sum of elements except highest) and n2(highest element)
+- we compare the difference between n1 and n2 and shift elements from n1 to n2 until the differnce is minimum
+- this is done using while loop
+ - sl[] is created which is added with elements lower than the difference
+ - the element in sl[] closest to half of differnce is shifted
+  - this is done using lambda function
+- when we get the last pair, length of sl[] becomes 0 and the minimum of n1,n2 is printed which is the answer
